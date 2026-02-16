@@ -11,7 +11,7 @@ generate_feeds = true
 lang = "ja"
 
 title = "Posts"
-subtitle = "あんまりジロジロ見られると恥ずかしいです……"
+subtitle = "これは技術ブログに見せかけた巧妙なエッセイ"
 
 date_format = "%Y-%m-%d"
 
