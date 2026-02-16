@@ -10,7 +10,7 @@ footer = false
 # If you don't want to display id/bio/avatar, simply comment out that line
 name = "yawarakatai"
 id = "yawarakatai.com"
-bio = "yawarakai (soft) + katai (hard) = yawarakatai"
+bio = "あんまりジロジロ見られると恥ずかしいです……"
 avatar = "img/icon.webp"
 links = [
     { name = "GitHub", icon = "github", url = "https://github.com/yawarakatai" },
