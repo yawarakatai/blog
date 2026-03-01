@@ -14,7 +14,7 @@ bio = "あんまりジロジロ見られると恥ずかしいです……"
 avatar = "img/icon.webp"
 links = [
     { name = "GitHub", icon = "github", url = "https://github.com/yawarakatai" },
-    { name = "Email", icon = "email", url = "mailto:<your-email-address>" },
+    { name = "Email", icon = "email", url = "mailto:me@yawarakatai.com" },
 ]
 
 # Show a few recent posts in home page
