@@ -1,4 +1,4 @@
-base_url = "https://yawarakatai.com"
+base_url = "https://blog.yawarakatai.com"
 title = "yawarakatai blog"
 description = "技術ブログっぽい見た目をしているが、それほど技術的じゃない"
 default_language = "ja"
