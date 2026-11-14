@@ -7,18 +7,6 @@ draft = false
 
 [taxonomies]
 tags = ["phone", "android", "debloat"]
-
-[extra]
-lang = "ja"
-toc = true
-comment = false
-copy = true
-outdate_alert = false
-outdate_alert_days = 180
-math = false
-mermaid = false
-featured = false
-reaction = false
 +++
 
 みなさんは**Debloat**をご存知でしょうか？
@@ -119,8 +107,6 @@ uninstall com.google.android.youtube
 ```
 
 私はパッケージリストをAIに投げて、いらないアプリをリストアップさせるという暴挙に出ましたが真似しないでください。
-
-[真似するなら](https://github.com/yawarakatai/debloat-xperia-10-v/blob/main/debloat.sh)
 
 実のところ私もどのアプリが重要かと聞かれると困るのですが、以下のアプリは消さないほうがいい（よかった）です。
 

@@ -1,0 +1,13 @@
+{# mark_new: 先頭の記事に NEW! を付ける（日付順の一覧でだけ true にする） #}
+{% macro post_list(pages, mark_new=false) %}
+<ul class="posts">
+  {% for page in pages %}
+  <li>
+    <time datetime="{{ page.date }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
+    <a href="{{ page.permalink }}">{{ page.title }}</a>
+    {% if mark_new and loop.first %}<span class="new">NEW!</span>{% endif %}
+    {% if page.description %}<span class="desc">{{ page.description }}</span>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="{{ lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{{ config.title }}{% endblock %}</title>
+    <meta name="description" content="{% block description %}{{ config.description }}{% endblock %}">
+    <link rel="icon" href="{{ get_url(path='img/icon.webp') }}">
+    <link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path='blog/atom.xml') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap">
+    <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+  </head>
+  <body>
+    <header class="panel">
+      {% block header %}
+      <a class="site-title" href="{{ get_url(path='') }}">yawarakatai blog</a>
+      {% endblock %}
+      <nav>
+        [ <a href="{{ get_url(path='blog') }}">blog</a>
+        | <a href="{{ get_url(path='tags') }}">tags</a>
+        | <a href="{{ get_url(path='about') }}">about</a> ]
+      </nav>
+    </header>
+    <main>{% block content %}{% endblock %}</main>
+    <footer>
+      {% block footer %}{% endblock %}
+      <p>© 2026 yawarakatai</p>
+    </footer>
+  </body>
+</html>

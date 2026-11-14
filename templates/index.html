@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block header %}
+<h1 class="site-title big"><i aria-hidden="true">&gt;</i> {{ config.title | replace(from=" ", to="_") }} <i aria-hidden="true">&lt;</i></h1>
+<p class="sub">{{ config.description }}</p>
+<p class="counter">あなたは <span>-2147483648</span> 人目のお客様です</p>
+{% endblock %}
+
+{% block content %}
+{% set blog = get_section(path="blog/_index.md") %}
+<section class="panel">
+  <h2 class="sec">更新履歴</h2>
+  {{ macros::post_list(pages=blog.pages, mark_new=true) }}
+</section>
+<section class="panel">
+  <h2 class="sec">リンク</h2>
+  <ul class="links">
+    {% for link in section.extra.links %}
+    <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}
+
+{% block footer %}
+<p>{{ section.extra.bio }}</p>
+{% endblock %}

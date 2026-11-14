@@ -7,18 +7,6 @@ draft = true
 
 [taxonomies]
 tags = ["ally", "umpc", "nixos"]
-
-[extra]
-lang = "ja"
-toc = true
-comment = false
-copy = true
-outdate_alert = false
-outdate_alert_days = 180
-math = false
-mermaid = false
-featured = false
-reaction = false
 +++
 
 ROG Allyを買いました。中古で5万円と少し。

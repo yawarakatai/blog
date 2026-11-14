@@ -78,19 +78,7 @@
 
                 [taxonomies]
                 tags = []
-
-                [extra]
-                lang = "ja"
-                toc = true
-                comment = false
-                copy = true
-                outdate_alert = false
-                outdate_alert_days = 180
-                math = false
-                mermaid = false
-                featured = false
-                reaction = false
-                +++;
+                +++
 
                 ここに本文を入力
                 EOF

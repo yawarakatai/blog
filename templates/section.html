@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block title %}{{ section.title }} | {{ config.title }}{% endblock %}
+{% block description %}{{ section.description }}{% endblock %}
+
+{% block content %}
+<article class="panel">
+  <h1>{{ section.title }}</h1>
+  <p class="meta">{{ section.description }}</p>
+  {{ section.content | safe }}
+  {% if section.pages %}{{ macros::post_list(pages=section.pages, mark_new=true) }}{% endif %}
+</article>
+{% endblock %}

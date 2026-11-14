@@ -7,18 +7,6 @@ draft = false
 
 [taxonomies]
 tags = ["tech", "blog", "how-to"]
-
-[extra]
-lang = "ja"
-toc = true
-comment = false
-copy = true
-outdate_alert = false
-outdate_alert_days = 180
-math = false
-mermaid = false
-featured = false
-reaction = false
 +++
 
 せっかくブログをはじめたので、ブログのはじめかたをブログにするのはクールだと思いました。

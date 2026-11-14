@@ -7,18 +7,6 @@ draft = false
 
 [taxonomies]
 tags = ["tech", "nixos", "shell"]
-
-[extra]
-lang = "ja"
-toc = true
-comment = false
-copy = true
-outdate_alert = false
-outdate_alert_days = 180
-math = false
-mermaid = false
-featured = false
-reaction = false
 +++
 
 NixOSを使い始めてはや半年、今まで連れ添った**Nushell**と別れることを決めました。
