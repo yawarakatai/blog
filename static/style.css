@@ -41,10 +41,12 @@
   box-sizing: border-box;
 }
 html {
-  /* everything is sized in rem, so the whole page grows with the window
-     (16px on phones, capped at 26px from ~1730px up) so the column fills
-     about two thirds of a half-screen window without sprawling at full screen */
-  font-size: clamp(16px, 1.5vw, 26px);
+  /* everything is sized in rem, so the whole page grows a little with the
+     window (16px up to ~1450px, capped at 18px from ~1640px up). The cap used
+     to be 26px so the column filled the window, but body text that large read
+     as loud and drowned out the headings; normal reading size won over
+     filling the width. */
+  font-size: clamp(16px, 1.1vw, 18px);
 }
 body {
   max-width: 44rem;
@@ -204,12 +206,14 @@ article h3 {
 }
 article h1 {
   margin: 0 0 0.25rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 article h2 {
   margin: 1.9rem 0 0.6rem;
   padding-bottom: 2px;
-  font-size: 1.2rem;
+  /* the dot font is thin, so headings need a clear size gap over the body
+     to outrank it */
+  font-size: 1.4rem;
   border-bottom: 2px dotted var(--pop);
 }
 article h2::before {
