@@ -41,12 +41,10 @@
   box-sizing: border-box;
 }
 html {
-  /* everything is sized in rem, so the whole page grows a little with the
-     window (16px up to ~1450px, capped at 18px from ~1640px up). The cap used
-     to be 26px so the column filled the window, but body text that large read
-     as loud and drowned out the headings; normal reading size won over
-     filling the width. */
-  font-size: clamp(16px, 1.1vw, 18px);
+  /* everything is sized in rem, so the whole page grows with the window
+     (16px on phones, capped at 26px from ~1730px up) so the column fills
+     about two thirds of a half-screen window without sprawling at full screen */
+  font-size: clamp(16px, 1.5vw, 26px);
 }
 body {
   max-width: 44rem;
@@ -57,6 +55,11 @@ body {
   gap: 0.9rem;
   background: var(--bg) radial-gradient(var(--dots) 1px, transparent 1.5px) 0 0 / 1.1rem 1.1rem;
   color: var(--fg);
+  /* running text is smaller than 1rem: the page scale (rem) is tuned to fill
+     the window, and at that scale 1rem body text read as loud and sat too
+     close to the thin dot-font headings. Capping the root size at 18px
+     instead was tried and rejected because it shrank the whole layout. */
+  font-size: 0.85rem;
   font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
   line-height: 1.8;
 }
@@ -206,14 +209,12 @@ article h3 {
 }
 article h1 {
   margin: 0 0 0.25rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 article h2 {
   margin: 1.9rem 0 0.6rem;
   padding-bottom: 2px;
-  /* the dot font is thin, so headings need a clear size gap over the body
-     to outrank it */
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   border-bottom: 2px dotted var(--pop);
 }
 article h2::before {
